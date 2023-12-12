@@ -1,19 +1,3 @@
-# In the input.txt there are lots of numbers and symbols, but we only need to
-# add up any number that is adjacent to a symbol, even diagonally.
-# Example:
-# 467..114..
-# ...*......
-# ..35..633.
-# ......#...
-# 617*......
-# .....+.58.
-# ..592.....
-# ......755.
-# ...$.*....
-# .664.598..
-# The answer would be 467 + 35 + 633 + 617 + 592 + 755 + 664 + 598 = 4316
-# 114 and 58 are not added because they are not adjacent to a symbol, not even diagonally.
-
 print('--- Day 3: Gear Ratios ---')
 
 answer = 0
@@ -40,11 +24,13 @@ for i, line in enumerate(lines):
         start = column
         num = ''
 
+        # Grab a whole number parsing through the string.
         while column < len(line) and line[column].isdigit():
             num += line[column]
             column += 1
 
         if num == '':
+            print(column, line[column])
             column += 1
             continue
 
