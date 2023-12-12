@@ -22,11 +22,12 @@ def findLoc(seed):
                 break
     return currentNumber
 
-maps = []
-locations = []
 
 # List the seeds
 seeds = list(map(int, lines[0].split(' ')[1:]))
+
+maps = []
+locations = []
 
 # Map the lines
 i = 0
