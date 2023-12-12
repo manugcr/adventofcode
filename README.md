@@ -1,2 +1,2 @@
 # adventofcode
-Advent of Code challenges of 2023 done in C.
+Advent of Code challenges of 2023 done in C and Python.
