@@ -22,7 +22,7 @@ int main (int argc, char *argv[])
 
     int TIMES[4]       = {50, 74, 86, 85};
     int DISTANCES[4]   = {242, 1017, 1691, 1252};
-    int ways[]         = {0};
+    int ways[4]         = {0};
     int answer         = 1; 
 
     /* Calculate ways and answer */
