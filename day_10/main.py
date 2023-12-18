@@ -23,8 +23,6 @@ def get_directions(grid, row, col, character):
         seen.add((row, col + 1))
         queue.append((row, col + 1))
 
-
-
 ROWS = len(grid)
 COLS = len(grid[0])
 
@@ -42,6 +40,5 @@ while queue:
     row, col = queue.popleft()
     character = grid[row][col]
     get_directions(grid, row, col, character)
-
 
 print(f'Answer: {len(seen)//2}')
