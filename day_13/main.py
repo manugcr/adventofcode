@@ -20,6 +20,7 @@ def find_mirror(grid):
 answer = 0
 for grid in grids:
     horizontal = find_mirror(grid)
+    # Transpose grid
     vertical = find_mirror(list(map(list, zip(*grid))))
 
     answer += 100 * horizontal
