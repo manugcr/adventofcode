@@ -46,7 +46,6 @@ while len(beams) > 0:
         continue
 
     energized[(x, y)].add(dir)
-    print(energized)
 
     for new_dir in MOVES[(grid[y][x], dir)]:
         beams.append(((x, y), new_dir))
