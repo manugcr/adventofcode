@@ -1,7 +1,7 @@
 import os
 
-# Define the range of numbers (14 to 31)
-day_numbers = range(14, 32)
+# Define the range of numbers
+day_numbers = range(1, 26)
 
 # Create folders and files
 for day_number in day_numbers:
